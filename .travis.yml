@@ -13,7 +13,7 @@ before_install:
   "${GAE_PYTHONPATH}"); fi
 - if [ ! -d ${HOME}/google-cloud-sdk ]; then export CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
 # Add gcloud to $PATH
-- source $HOME/google-cloud-sdk/path.bash.inc
+#- source $HOME/google-cloud-sdk/path.bash.inc
 - tar -xzf credentials.tar.gz
 - mkdir -p lib
 - gcloud auth activate-service-account --key-file client-secret.json
